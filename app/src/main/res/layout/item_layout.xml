@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slide">
+
+    <TextView
+        android:id="@+id/currentDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="ans"
+        android:textColor="#b6830e"
+        android:background="#494906"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/currentDateTextView"
+        android:layout_marginTop="30dp"
+        android:onClick="edit"
+        android:text="Edit"
+        android:background="#b6830e"
+        android:textColor="#3f14da"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/calendarImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/currentDateTextView"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/calendar"
+        android:padding="5dp"
+        android:background="#b6830e"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/currentDateTextView"
+        android:layout_marginTop="30dp"
+        android:background="#b6830e"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="save"
+        android:text="Save"
+        android:textColor="#3f14da" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editButton"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editButton"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/showTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text=""
+                android:textColor="#000000"
+                android:background="#ecc61b"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColorHint="#e1d9d9"
+                android:text=""
+                android:background="#faf9f8"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/diary_page">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/historyTextView"
+        android:background="#ffffff"
+        android:text="History"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:padding="10dp"
+        android:textColor="#ffa500"
+        android:textSize="30sp" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/historyTextView"
+        android:layout_marginTop="20dp"
+        android:verticalSpacing="20dp"
+        android:scrollbars="vertical" android:id="@+id/gridView"></GridView>
+</RelativeLayout>
